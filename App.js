@@ -1,23 +1,24 @@
-import {StyleSheet, Text, View,SafeAreaView} from 'react-native';
+import {StyleSheet, Text, View, SafeAreaView} from 'react-native';
 import React from 'react';
-import Login from './src/screens/login';
-import Signup from './src/screens/signup';
+import Login from './src/screens/LoginScreen';
+import Signup from './src/screens/SignUpScreen';
 import ForgotPassword from './src/screens/ForgotPassword';
 import LocationScreen from './src/screens/LocationScreen';
-import SafeViewAndroid from './src/components/atoms/SafeAreaViewAndroid';
+import HomeScreen from './src/screens/HomeScreen';
+import EventDetailedScreen from './src/screens/eventDetailedScreen';
+import { NavigationContainer } from '@react-navigation/native';
+
 
 const App = () => {
   return (
-    // <SafeAreaView style={SafeViewAndroid.AndroidSafeArea}>
-    //  <Signup />
-    // </SafeAreaView>
-  
-  <View>
-    <Signup />
-  </View>
-    );
+   <NavigationContainer>
+ <EventDetailedScreen />
+    </NavigationContainer>
+     
+    
+  );
 };
 
 export default App;
 
-// const styles = StyleSheet.create({});
+const styles = StyleSheet.create({});

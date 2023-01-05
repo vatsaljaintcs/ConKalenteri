@@ -20,7 +20,7 @@ const ForgotPassword = () => {
        height: hgth*1,width:wid*1,justifyContent:'center'}}
    >
     
-    <NavHeader data={{flex:0.07,header:'Forget Password'}} />
+    <NavHeader data={{flex:0.07,header:'Forget Password',back:true}} />
    
   
    <ForgotDetailsBox data={{flex:0.93}} />

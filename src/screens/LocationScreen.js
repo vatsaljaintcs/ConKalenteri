@@ -20,7 +20,7 @@ const LocationScreen = () => {
        height: hgth*1,width:wid*1,justifyContent:'center'}}
    >
     
-    <NavHeader data={{flex:0.07,header:'Location'}} />
+    <NavHeader data={{flex:0.07,header:'Location',back:true}} />
    
   
    <LocationBox data={{flex:0.93}} />
